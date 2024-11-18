@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Home top-bar-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/background_oval">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/black_logo"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="20dp"
+                    android:layout_marginTop="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hello, "
+                        android:textSize="20sp"
+                        android:textColor="@color/orange"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/uname_display"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NAME"
+                        android:textSize="20sp"
+                        android:textColor="@color/orange"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <!--Slider-->
+            <HorizontalScrollView
+                android:id="@+id/home_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/home_slider_01"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/border_radius_slider"
+                        android:clipToOutline="true"
+                        android:outlineProvider="background"
+                        android:layout_marginRight="5dp"/>
+
+                    <ImageView
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/home_slider_02"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/border_radius_slider"
+                        android:clipToOutline="true"
+                        android:outlineProvider="background"
+                        android:layout_marginRight="5dp"/>
+
+                    <ImageView
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/home_slider_03"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/border_radius_slider"
+                        android:clipToOutline="true"
+                        android:outlineProvider="background"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="TOP TRENDS"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!--Product 01-->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/card_bg"
+                            android:layout_marginRight="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/product_01"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="Product 01"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="$ Price"
+                                    android:layout_marginBottom="10dp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!--Product 02-->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/card_bg"
+                            android:layout_marginRight="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/product_02"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="Product 02"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="$ Price"
+                                    android:layout_marginBottom="10dp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!--Product 03-->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/card_bg"
+                            android:layout_marginRight="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/product_03"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="Product 03"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="$ Price"
+                                    android:layout_marginBottom="10dp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!--Product 04-->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/card_bg"
+                            android:layout_marginRight="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/product_04"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="Product 04"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="$ Price"
+                                    android:layout_marginBottom="10dp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!--Product 05-->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/card_bg"
+                            android:layout_marginRight="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/product_05"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="Product 05"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="$ Price"
+                                    android:layout_marginBottom="10dp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!--Product 06-->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/card_bg"
+                            android:layout_marginRight="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/product_06"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="Product 06"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="$ Price"
+                                    android:layout_marginBottom="10dp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+            <!--New Arrivals Section-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="NEW ARRIVALS"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!--Product 01-->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/card_bg"
+                            android:layout_marginRight="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/product_05"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="Product 05"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="$ Price"
+                                    android:layout_marginBottom="10dp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!--Product 02-->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/card_bg"
+                            android:layout_marginRight="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/product_02"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="Product 02"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="$ Price"
+                                    android:layout_marginBottom="10dp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!--Product 03-->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/card_bg"
+                            android:layout_marginRight="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/product_03"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="Product 03"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="$ Price"
+                                    android:layout_marginBottom="10dp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!--Product 04-->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/card_bg"
+                            android:layout_marginRight="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/product_04"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="Product 04"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="$ Price"
+                                    android:layout_marginBottom="10dp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!--Product 05-->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/card_bg"
+                            android:layout_marginRight="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/product_05"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="Product 05"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="$ Price"
+                                    android:layout_marginBottom="10dp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!--Product 06-->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/card_bg"
+                            android:layout_marginRight="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal">
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="200dp"
+                                    android:src="@drawable/product_06"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="Product 06"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="10sp"
+                                    android:text="$ Price"
+                                    android:layout_marginBottom="10dp"/>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+
+            <!--Category navigation-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/nav_male_section"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Male clothings"
+                    android:textSize="10sp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_background" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/nav_female_section"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Female clothings"
+                    android:layout_margin="5dp"
+                    android:textSize="10sp"
+                    android:background="@drawable/button_background"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

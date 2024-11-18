@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "258714333977",
+    "project_id": "nexgen-1399f",
+    "storage_bucket": "nexgen-1399f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258714333977:android:9c21e54d77954415c1cb88",
+        "android_client_info": {
+          "package_name": "com.example.nexgen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoWg1o2YIFHSZU1n3vO496NE5Su8d2_Dc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
